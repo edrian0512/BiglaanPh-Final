@@ -30,8 +30,8 @@
         <header class="header">
             <div id="menu-btn" class="fas fa-bars"></div>
 
-            <a data-aos="zoom-in-left" data-aos-delay="150" href="/" class="logo"> <i class="fas fa-paper-plane"></i>
-                Biglaan <span style='color:#29d9d5'>PH</span></a>
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>
+            Biglaan<span id="ph-color">PH</span></a>
 
                 <nav class="navbar">
                     <a data-aos="zoom-in-left" data-aos-delay="300" href="/">home</a>
@@ -497,23 +497,23 @@
                             <h3 class='text-white text-center mb-3'>Book this Tour</h3>
 
                             <div class='form-outline mb-4'>
-                                <input type="text" placeholder="Name" class='form-control form-control-lg form-input'
-                                    name="name">
+                                <input type="text" placeholder="Full Name" class='form-control form-control-lg form-input'
+                                    name="name" required>
                             </div>
 
                             <div class='form-outline mb-4'>
                                 <input type="email" placeholder="Email" class='form-control form-control-lg form-input'
-                                    name="email">
+                                    name="email" required>
                             </div>
 
                             <div class='form-outline mb-4'>
                                 <input type="number" placeholder="Contact Number"
-                                    class='form-control form-control-lg form-input' name="phone">
+                                    class='form-control form-control-lg form-input' name="phone" required>
                             </div>
 
                             <div class='form-outline mb-4'>
                                 <input type="text" placeholder="Address" class='form-control form-control-lg form-input'
-                                    name="address">
+                                    name="address" required>
                             </div>
 
                             <div class='form-outline mb-4'>
@@ -527,12 +527,12 @@
                                 <div class="col-lg-6">
                                     <div class='form-outline mb-4 mt-4'>
                                         <input type="number" placeholder="adult"
-                                            class='form-control form-control-lg form-input' name="adult">
+                                            class='form-control form-control-lg form-input' name="adult" min="0" required>
                                     </div>
                                 </div>
                                 <div class='form-outline mb-4 mt-4 col-lg-6'>
                                     <input type="number" placeholder="child"
-                                        class='form-control form-control-lg form-input' name="child">
+                                        class='form-control form-control-lg form-input' name="child" min="0">
                                 </div>
                             </div>
 
@@ -541,14 +541,14 @@
                                     <div class='form-outline mb-4'>
                                         <h2 class='text-white' id='font-form'>Check-In</h2>
                                         <input type="date" placeholder="mm/dd/yyyy"
-                                            class='form-control form-control-lg form-input' name="checkIn">
+                                            class='form-control form-control-lg form-input' name="checkIn" required>
                                     </div>
                                 </div>
 
                                 <div class='form-outline mb-4 col-lg-6'>
                                     <h2 class='text-white' id='font-form'>Check-Out</h2>
                                     <input type="date" placeholder="mm/dd/yyyy"
-                                        class='form-control form-control-lg form-input' name="checkOut">
+                                        class='form-control form-control-lg form-input' name="checkOut" required>
                                 </div>
 
                             </div>
@@ -582,7 +582,7 @@
                     class="d-flex flex-column  p-3 text-white flex-fill justify-content-lg-evenly justify-content-sm-evenly">
                     <div class="d-flex flex-column">
                         <img src="../public/images/baguio1.jpg"><br>
-                        <a href="baguio.php" class='text-decoration-none'>
+                        <a href="/baguio" class='text-decoration-none'>
                             <h2 class='mt-3 btn-form'>Baguio</h2>
                         </a>
                     </div>
@@ -593,7 +593,7 @@
                     class="d-flex flex-column  p-3 text-white flex-fill justify-content-lg-evenly justify-content-sm-evenly">
                     <div class="d-flex flex-column">
                         <img src="../public/images/cebu1.jpg"><br>
-                        <a href="boracay.php" class='text-decoration-none'>
+                        <a href="/cebu" class='text-decoration-none'>
                             <h2 class='mt-3 btn-form'>Cebu</h2>
                         </a>
                     </div>
@@ -604,7 +604,7 @@
                     class="d-flex flex-column p-3 text-white flex-fill justify-content-lg-evenly justify-content-sm-evenly">
                     <div class="d-flex flex-column ">
                         <img src="../public/images/bohol2.jpg"><br>
-                        <a href="boracay.php" class='text-decoration-none'>
+                        <a href="/bohol" class='text-decoration-none'>
                             <h2 class='mt-3 btn-form'>Bohol</h2>
                         </a>
                     </div>
@@ -615,7 +615,7 @@
                     class="d-flex flex-column p-3 text-white flex-fill justify-content-lg-evenly justify-content-sm-evenly">
                     <div class="d-flex flex-column">
                         <img src="../public/images/palawan1.jpg"><br>
-                        <a href="boracay.php" class='text-decoration-none'>
+                        <a href="/palawan" class='text-decoration-none'>
                             <h2 class='mt-3 btn-form'>Palawan</h2>
                         </a>
                     </div>

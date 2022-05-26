@@ -3,7 +3,6 @@
     margin-top: 9rem;
     width: 90%;
     border-radius: 1rem;
-    // background:linear-gradient($black-bg, $black-bg), url(../images/home-bg.jpg) no-repeat;
     background:linear-gradient($black-bg, $black-bg), url(../images/bora1.webp) no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,7 +33,7 @@
             max-width: 60rem;
             margin:1rem auto;
             font-size: 1.4rem;
-            color:$blue;
+            color:$white;
             line-height: 2;
         }
     }

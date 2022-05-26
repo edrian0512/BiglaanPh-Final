@@ -1,6 +1,6 @@
 @mixin banner-image {
   background-color: black;
-  color: black;
+  color: $white;
   height: 50vh;
   width: 100vw;
   justify-content: center;
@@ -23,21 +23,63 @@
 
     & h3 {
       font-size: 4vw;
-      color: $black;
+      color: $white;
     }
   }
-  
 }
 
-
-
-.bg-boracay {
-  background-image: url("../images/bora3.jpg");
+.bg-baguio {
+  // background-image: url("../images/baguio2.jpg");
+  background: linear-gradient($black-bg, $black-bg), url(../images/baguio2.jpg);
+  @include banner-image;
+}
+.bg-bataan {
+  background: linear-gradient($black-bg, $black-bg), url(../images/bataan4.jpg);
   @include banner-image;
 }
 
-.bg-baguio{
-  background-image: url("../images/baguio2.jpg");
+.bg-bicol {
+  background: linear-gradient($black-bg, $black-bg), url(../images/bicolCagsawa.jpg);
+  @include banner-image;
+}
+
+.bg-boracay {
+  background: linear-gradient($black-bg, $black-bg), url(../images/bora3.jpg);
+  @include banner-image;
+}
+
+.bg-cebu {
+  background: linear-gradient($black-bg, $black-bg), url(../images/cebu1.jpg);
+  @include banner-image;
+}
+
+.bg-ilocossur {
+  background: linear-gradient($black-bg, $black-bg), url(../images/ilocossur1.jpg);
+  @include banner-image;
+}
+
+.bg-ilocosnorte {
+  background: linear-gradient($black-bg, $black-bg), url(../images/ilocosnorte3.jpg);
+  @include banner-image;
+}
+
+.bg-manila {
+  background: linear-gradient($black-bg, $black-bg), url(../images/manila3.jpg);
+  @include banner-image;
+}
+
+.bg-mindoro {
+  background: linear-gradient($black-bg, $black-bg), url(../images/mindoro2.jpg);
+  @include banner-image;
+}
+
+.bg-palawan {
+  background: linear-gradient($black-bg, $black-bg), url(../images/palawan3.jpg);
+  @include banner-image;
+}
+
+.bg-siargao {
+  background: linear-gradient($black-bg, $black-bg), url(../images/siargao3.jpg);
   @include banner-image;
 }
 
@@ -72,7 +114,7 @@ form {
 
 .tab {
   overflow: hidden;
-  background-color: $blue;
+  background-color: $white;
   & button {
     background-color: inherit;
     float: left;
@@ -99,13 +141,9 @@ form {
   border-top: none;
 }
 
-
-
-.btn-form{
+.btn-form {
   color: $white;
-  &:hover{
+  &:hover {
     color: $blue;
   }
 }
-
-
