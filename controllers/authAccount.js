@@ -12,21 +12,22 @@ const db = mysql.createConnection({
 
 
 exports.register = (req, res) => {
-    const { name, email, phone, address, adult, child, checkIn, checkOut, message } = req.body
+    const { name, email, phone, address, desPackage, adult, child, checkIn, checkOut, message } = req.body
 
     db.query(
-        'INSERT INTO boracay_tour SET ?', //
+        'INSERT INTO tourpackage SET ?', //
         {
             name: name,
             email: email,
             phone: phone,
             address: address,
+            desPackage: desPackage,
             adult: adult,
             child: child,
             checkIn: checkIn,
             checkOut: checkOut,
             message: message
-            
+
 
         },
         (err) => {
