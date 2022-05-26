@@ -1,0 +1,111 @@
+@mixin banner-image {
+  background-color: black;
+  color: black;
+  height: 50vh;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  & .content {
+    text-align: center;
+
+    & span {
+      font-weight: bolder;
+      color: transparent;
+      -webkit-text-stroke: 0.1rem $white;
+      font-size: 4vw;
+      display: block;
+    }
+
+    & h3 {
+      font-size: 4vw;
+      color: $black;
+    }
+  }
+  
+}
+
+
+
+.bg-boracay {
+  background-image: url("../images/bora3.jpg");
+  @include banner-image;
+}
+
+.bg-baguio{
+  background-image: url("../images/baguio2.jpg");
+  @include banner-image;
+}
+
+#margin {
+  margin-top: 2rem;
+}
+
+#it-img {
+  height: 55vh;
+}
+
+form {
+  & .form-input {
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+#font-form {
+  font-size: 15px;
+}
+
+.addOns {
+  img {
+    border-radius: 10px;
+    height: 30vh;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.tab {
+  overflow: hidden;
+  background-color: $blue;
+  & button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  & button.active {
+    background-color: #ccc;
+  }
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid $white;
+  border-top: none;
+}
+
+
+
+.btn-form{
+  color: $white;
+  &:hover{
+    color: $blue;
+  }
+}
+
+
