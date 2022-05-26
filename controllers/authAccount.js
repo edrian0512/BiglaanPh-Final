@@ -34,7 +34,7 @@ exports.register = (req, res) => {
             if (err) {
                 return console.log(err.message)
             }
-            return res.render('Boracay', { message: 'You have registered successfully' })
+            return res.render('boracay', { message: 'You have registered successfully' })
         }
     )
 }
