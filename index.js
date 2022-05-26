@@ -2,7 +2,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 const dotenv = require('dotenv')
-const port = 3000;
+const port = process.env.PORT || 3000; //deploy heroku
 const hostName = 'localhost';
 const path = require('path')
 // const userRoutes = require('./routes/User');
@@ -33,7 +33,7 @@ app.use('/', require('./routes/registerRoutes'));
 
 app.use('/Auth', require('./routes/Auth')); //try capital
 
-app.listen(port, hostName, () => {
+app.listen(port, () => {
     console.log('Server Started')
     db.connect((err) => {
         if (err) {
