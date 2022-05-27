@@ -152,6 +152,22 @@ section {
   line-height: 2;
 }
 
+#btn-home {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #111;
+  border: 0.2rem solid orange;
+  border-radius: 10px;
+  cursor: pointer;
+  background: orange;
+  text-decoration: none;
+}
+#btn-home:hover {
+  color: #fff;
+}
+
 .book-form {
   width: 80%;
   margin: 1rem auto;

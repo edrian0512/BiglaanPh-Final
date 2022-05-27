@@ -1,6 +1,6 @@
-const async = require('hbs/lib/async');
+// const async = require('hbs/lib/async');
 const mysql = require('mysql2');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
